@@ -82,6 +82,7 @@ a { color: inherit; text-decoration: none; }
   z-index: 1000;
   padding: 16px 0;
   transition: var(--transition);
+  background: #000;
 }
 .navbar.scrolled {
   background: rgba(15, 15, 26, 0.95);
