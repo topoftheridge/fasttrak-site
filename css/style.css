@@ -442,7 +442,7 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   border-radius: var(--radius);
   overflow: hidden;
-  aspect-ratio: 16/10;
+  aspect-ratio: 4/3;
   display: flex;
   align-items: flex-end;
   cursor: default;
@@ -453,15 +453,11 @@ a { color: inherit; text-decoration: none; }
 .service-grid-bg {
   position: absolute;
   inset: 0;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   transition: transform 0.5s ease;
 }
-.service-bg-oil { background: linear-gradient(135deg, #1a1a2e 0%, #2d1f0e 50%, #1a1a2e 100%); }
-.service-bg-brake { background: linear-gradient(135deg, #1a1a2e 0%, #2e1a1a 50%, #1a1a2e 100%); }
-.service-bg-suspension { background: linear-gradient(135deg, #1a1a2e 0%, #1a2e1f 50%, #1a1a2e 100%); }
-.service-bg-general { background: linear-gradient(135deg, #1a1a2e 0%, #1f1a2e 50%, #1a1a2e 100%); }
+/* service bg classes removed — using inline background-image */
 
 .service-grid-card:hover .service-grid-bg { transform: scale(1.05); }
 
@@ -578,7 +574,7 @@ a { color: inherit; text-decoration: none; }
 .cta-phones { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
 /* ========== FOOTER ========== */
-.footer { padding: 64px 0 0; background: #000; border-top: 1px solid rgba(255,255,255,0.05); }
+.footer { padding: 32px 0 0; background: #000; border-top: 1px solid rgba(255,255,255,0.05); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
 .footer-brand .logo-img { width: 200px; height: auto; }
 .footer-brand .logo-name { font-size: 1.05rem; }
@@ -595,10 +591,10 @@ a { color: inherit; text-decoration: none; }
 }
 .footer-social a:hover { background: var(--accent); color: #fff; }
 .footer-links h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 16px; color: var(--accent); }
-.footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
 .footer-links a { font-size: 0.9rem; color: var(--text-muted); transition: var(--transition); }
 .footer-links a:hover { color: var(--accent); }
-.footer-bottom { padding: 24px 0; margin-top: 48px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
+.footer-bottom { padding: 16px 0; margin-top: 24px; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; }
 .footer-bottom p { font-size: 0.85rem; color: var(--text-muted); }
 
 /* ========== RESPONSIVE ========== */
