@@ -24,7 +24,28 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#services">Services</a></li>
+        <li class="nav-dropdown">
+          <a href="#services">Services <i data-lucide="chevron-down" class="nav-dd-icon"></i></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#services">Oil Changes & Maintenance</a></li>
+            <li><a href="#services">Brake Service</a></li>
+            <li><a href="#services">Suspension Work</a></li>
+            <li><a href="#services">General Repairs</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <a href="#">Areas <i data-lucide="chevron-down" class="nav-dd-icon"></i></a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#">Minneapolis, MN</a></li>
+            <li><a href="#">St. Paul, MN</a></li>
+            <li><a href="#">Brooklyn Park, MN</a></li>
+            <li><a href="#">Plymouth, MN</a></li>
+            <li><a href="#">Bloomington, MN</a></li>
+            <li><a href="#">Maple Grove, MN</a></li>
+            <li><a href="#">Eagan, MN</a></li>
+            <li><a href="#">Eden Prairie, MN</a></li>
+          </ul>
+        </li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
@@ -40,7 +61,7 @@
   <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- Hero -->
-  <header class="hero" id="hero">
+  <header class="hero" id="hero" style="background-image: linear-gradient(135deg, rgba(10,10,20,0.7) 0%, rgba(26,26,46,0.8) 100%), url('assets/images/hero/fasttrakhero.jpg');">
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <h1>Mobile Auto Maintenance &amp; Repair — <span class="text-accent">We Come To You</span></h1>
@@ -93,10 +114,6 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="qVehicle">Vehicle Info</label>
-              <input type="text" id="qVehicle" name="vehicle" placeholder="Year / Make / Model (e.g. 2019 Honda Civic)" required>
-            </div>
-            <div class="form-group">
               <label for="qZip">ZIP Code</label>
               <input type="text" id="qZip" name="zip" placeholder="Enter ZIP code" maxlength="5" required>
             </div>
@@ -135,7 +152,6 @@
   <!-- How It Works -->
   <section class="process-section" id="about">
     <div class="container">
-      <p class="section-tag">How It Works</p>
       <h2 class="section-title">Mobile Maintenance Made Easy</h2>
       <p class="section-subtitle">No shop visits, no waiting rooms. We bring professional auto service directly to your location in the Twin Cities.</p>
 
@@ -179,7 +195,6 @@
   <!-- Core Services Grid -->
   <section class="services" id="services">
     <div class="container">
-      <p class="section-tag">What We Do</p>
       <h2 class="section-title">Our Core Services</h2>
 
       <div class="services-grid">
