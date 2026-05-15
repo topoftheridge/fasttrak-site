@@ -511,33 +511,55 @@ a { color: inherit; text-decoration: none; }
 .additional-services .section-title { text-align: center; }
 .additional-services .section-title { margin-bottom: 48px; }
 
-.additional-grid {
+.additional-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.additional-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.additional-list li {
+  color: var(--text-muted);
+  font-size: 1rem;
+  padding-left: 20px;
+  position: relative;
+}
+.additional-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ========== AREAS WE SERVE ========== */
+.areas-section { padding: 80px 0; }
+.areas-section .section-title,
+.areas-section .section-subtitle { text-align: center; }
+.areas-section .section-subtitle { margin-bottom: 48px; }
+.areas-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 16px;
 }
-.additional-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 20px 24px;
-  background: rgba(255,255,255,0.03);
+.area-card {
+  padding: 20px;
+  border-radius: var(--radius);
+  background: var(--bg-card);
   border: 1px solid rgba(255,255,255,0.06);
-  border-radius: var(--radius-sm);
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
   transition: var(--transition);
 }
-.additional-item:hover {
-  border-color: rgba(245, 158, 11, 0.2);
-  background: rgba(245, 158, 11, 0.04);
-}
-.additional-item i {
-  width: 20px; height: 20px;
+.area-card:hover {
+  border-color: var(--accent);
   color: var(--accent);
-  flex-shrink: 0;
-}
-.additional-item span {
-  font-size: 0.95rem;
-  font-weight: 500;
 }
 
 /* ========== CTA BANNER ========== */
@@ -641,7 +663,8 @@ a { color: inherit; text-decoration: none; }
   .process-step .process-text { flex: 1; }
 
   .services-grid { grid-template-columns: 1fr; }
-  .additional-grid { grid-template-columns: 1fr 1fr; }
+  .additional-list { grid-template-columns: 1fr; }
+  .areas-grid { grid-template-columns: repeat(2, 1fr); }
 
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { text-align: center; justify-content: center; }
@@ -656,5 +679,4 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 480px) {
   .logo-name { font-size: 0.8rem; }
   .quote-header h2 { font-size: 1.4rem; }
-  .additional-grid { grid-template-columns: 1fr; }
 }
