@@ -61,8 +61,7 @@
   <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- Hero -->
-  <header class="hero" id="hero" style="background-image: linear-gradient(135deg, rgba(10,10,20,0.7) 0%, rgba(26,26,46,0.8) 100%), url('assets/images/hero/fasttrakhero.jpg');">
-    <div class="hero-overlay"></div>
+  <header class="hero" id="hero">
     <div class="container hero-content">
       <h1>Mobile Auto Maintenance &amp; Repair — <span class="text-accent">We Come To You</span></h1>
       <p class="hero-sub">Professional vehicle maintenance and repair services delivered to your home, office, or anywhere in the Twin Cities metro area. Skip the shop — we bring the shop to you.</p>
@@ -199,7 +198,7 @@
 
       <div class="services-grid">
         <div class="service-grid-card">
-          <div class="service-grid-bg service-bg-oil"></div>
+          <div class="service-grid-bg service-bg-oil" style="background-image: url('assets/images/services/fasttrakoil.png');"></div>
           <div class="service-grid-overlay"></div>
           <div class="service-grid-content">
             <div class="service-icon"><i data-lucide="droplets"></i></div>
@@ -209,7 +208,7 @@
         </div>
 
         <div class="service-grid-card">
-          <div class="service-grid-bg service-bg-brake"></div>
+          <div class="service-grid-bg service-bg-brake" style="background-image: url('assets/images/services/fasttrakbreaks.png');"></div>
           <div class="service-grid-overlay"></div>
           <div class="service-grid-content">
             <div class="service-icon"><i data-lucide="disc"></i></div>
@@ -219,7 +218,7 @@
         </div>
 
         <div class="service-grid-card">
-          <div class="service-grid-bg service-bg-suspension"></div>
+          <div class="service-grid-bg service-bg-suspension" style="background-image: url('assets/images/services/fasttrakshocks.png');"></div>
           <div class="service-grid-overlay"></div>
           <div class="service-grid-content">
             <div class="service-icon"><i data-lucide="arrow-up-down"></i></div>
@@ -229,7 +228,7 @@
         </div>
 
         <div class="service-grid-card">
-          <div class="service-grid-bg service-bg-general"></div>
+          <div class="service-grid-bg service-bg-general" style="background-image: url('assets/images/services/fasttrakgeneralrepair.png');"></div>
           <div class="service-grid-overlay"></div>
           <div class="service-grid-content">
             <div class="service-icon"><i data-lucide="wrench"></i></div>
@@ -241,23 +240,49 @@
     </div>
   </section>
 
+  <!-- Areas We Serve -->
+  <section class="areas-section">
+    <div class="container">
+      <h2 class="section-title">Areas We <span class="text-accent">Serve</span></h2>
+      <p class="section-subtitle">Proudly serving the Twin Cities metro area and surrounding communities.</p>
+      <div class="areas-grid">
+        <div class="area-card">Minneapolis, MN</div>
+        <div class="area-card">St. Paul, MN</div>
+        <div class="area-card">Brooklyn Park, MN</div>
+        <div class="area-card">Plymouth, MN</div>
+        <div class="area-card">Bloomington, MN</div>
+        <div class="area-card">Maple Grove, MN</div>
+        <div class="area-card">Eagan, MN</div>
+        <div class="area-card">Eden Prairie, MN</div>
+        <div class="area-card">Burnsville, MN</div>
+        <div class="area-card">Fridley, MN</div>
+        <div class="area-card">Coon Rapids, MN</div>
+        <div class="area-card">Woodbury, MN</div>
+      </div>
+    </div>
+  </section>
+
   <!-- Additional Services -->
   <section class="additional-services">
     <div class="container">
-      <p class="section-tag">More Services</p>
       <h2 class="section-title">Additional Services We Offer</h2>
-      <div class="additional-grid">
-        <div class="additional-item"><i data-lucide="zap"></i><span>Starter Repair</span></div>
-        <div class="additional-item"><i data-lucide="fuel"></i><span>Fuel Pumps</span></div>
-        <div class="additional-item"><i data-lucide="droplet"></i><span>Water Pumps</span></div>
-        <div class="additional-item"><i data-lucide="battery-charging"></i><span>Battery Installation</span></div>
-        <div class="additional-item"><i data-lucide="rotate-cw"></i><span>Alternator Repair</span></div>
-        <div class="additional-item"><i data-lucide="circle"></i><span>Tire Changes</span></div>
-        <div class="additional-item"><i data-lucide="gauge"></i><span>Fuel Injection Repair</span></div>
-        <div class="additional-item"><i data-lucide="settings"></i><span>Tune Ups</span></div>
-        <div class="additional-item"><i data-lucide="truck"></i><span>Parts Delivery</span></div>
-        <div class="additional-item"><i data-lucide="cable"></i><span>Hose Replacement</span></div>
-        <div class="additional-item"><i data-lucide="link"></i><span>Belt Replacement</span></div>
+      <div class="additional-list">
+        <ul>
+          <li>Starter Repair</li>
+          <li>Fuel Pumps</li>
+          <li>Water Pumps</li>
+          <li>Battery Installation</li>
+          <li>Alternator Repair</li>
+          <li>Tire Changes</li>
+        </ul>
+        <ul>
+          <li>Fuel Injection Repair</li>
+          <li>Tune Ups</li>
+          <li>Oil Changes</li>
+          <li>Parts Delivery</li>
+          <li>Hose Replacement</li>
+          <li>Belt Replacement</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -280,7 +305,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <img src="assets/images/logo/fasttrakheaderlogo.png" alt="FASTTRAK Mobile Maintenance" class="logo-img">
+          <img src="assets/images/logo/fasttraklogofooter.png" alt="FASTTRAK Mobile Maintenance" class="logo-img">
         </a>
         <p>Professional mobile auto maintenance and repair services in the Twin Cities metro area. We come to your home, office, or wherever you need us.</p>
         <div class="footer-social">
